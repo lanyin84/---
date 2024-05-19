@@ -350,7 +350,7 @@ body{
 
 /*表尾部分(整體)*/
 .footer{
-    padding: 100px 312px 100px 312px;
+    padding: 100px 16% 100px 16%;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
