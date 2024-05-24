@@ -302,9 +302,6 @@ body{
     .article h3{
         margin-right: 12px;
     }
-    &::-webkit-scrollbar {
-          display: none;
-    }
 }
 
 /*相關文章*/
