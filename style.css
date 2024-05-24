@@ -255,7 +255,7 @@ body{
     linear-gradient(to left, #919191, #919191) right bottom no-repeat;
     background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px; 
 }
-/*同學的建議*/
+/*同學給的建議*/
 @media (max-width: 767px){
     .header{
         margin-bottom: 0px;
