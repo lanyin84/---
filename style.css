@@ -78,23 +78,6 @@ body{
     display: flex;
     flex-wrap:wrap;
 }
-@media (max-width: 767px){
-    .header{
-        padding: 28px 5% 28px 5%;
-    }
-    .navbar{
-        display: none;
-    }
-}
-@media (max-width: 375px){
-    .header{
-        padding: 28px 5% 28px 5%;
-        margin-bottom: 60px;
-    }
-    .header img{
-        width: 80px;
-    }
-}
 .navbar li a{
     display: block;
     text-align:center;
@@ -127,6 +110,9 @@ body{
     height: 45px;
 }
 @media (max-width: 767px) {
+    .header{
+        padding: 28px 5% 28px 5%;
+    }
     .navbar{
         display: none;
         flex-direction:column;
@@ -136,6 +122,15 @@ body{
     }
     .burger{
         display: flex;
+    }
+}
+@media (max-width: 375px){
+    .header{
+        padding: 28px 5% 28px 5%;
+        margin-bottom: 60px;
+    }
+    .logo{
+        width: 80px;
     }
 }
   
@@ -168,17 +163,6 @@ body{
     color: #919191;
     font-size: 24px;
     padding-bottom: 50px;
-}
-@media (max-width: 375px){
-    .note{
-        justify-content: space-between;
-    }
-    .note h4{
-        font-size: 18px;
-    }
-    .separator{
-        display: none;
-    }
 }
 .content-left h1{
     color: #3B3B3B;
@@ -230,6 +214,17 @@ body{
         margin-top: 30px;
     }
 }
+@media (max-width: 375px){
+    .note{
+        justify-content: space-between;
+    }
+    .note h4{
+        font-size: 18px;
+    }
+    .separator{
+        display: none;
+    }
+}
 
 /*文章連結*/
 .content-right{
@@ -254,12 +249,12 @@ body{
 }
 .article li{
     margin-bottom: 50px;
-  }
+}
 .article li a{
     color: #5B5B5B;
     text-decoration: none;
     padding: 8px;
-  }
+}
 .article li a:hover{
     color: #1E1E1E;
     font-weight: bold;
@@ -304,15 +299,6 @@ body{
     padding: 100px 16% 150px 16%;
     border-top: 1px solid #C1C1C1;
 }
-@media (max-width: 375px){
-    .related-articles{
-        padding: 50px 5% 60px 5%;
-      }
-    .item{
-        display: flex;
-        flex-direction:column-reverse;
-      }
-}
 .related-articles h2{
     color:#3B3B3B;
     font-size: 30px;
@@ -328,15 +314,6 @@ body{
 .Schematic-diagram img{
     border-radius: 15px;
 }
-@media (max-width: 375px){
-    .related-articles h2{
-        text-align: center;
-    }
-    .Schematic-diagram img{
-        width: 100%;
-        height: auto;
-    }
-}
 .Schematic-diagram a{
     display: block;
     color:#3B3B3B;
@@ -350,22 +327,13 @@ body{
 .Schematic-diagram a:active{
     color:gray;
 }
-@media (max-width: 375px){
-    .Schematic-diagram a{
-        font-size:26px;
-        padding-top: 10px;
-    }
-    .Schematic-diagram li{
-        margin-bottom: 40px;
-    }
-}
 .label{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-  }
+}
 .label h4 a{
     display: block;
     text-align:center;
@@ -384,11 +352,32 @@ body{
     font-size:24px;
 }
 @media (max-width: 375px){
+    .related-articles{
+        padding: 50px 5% 60px 5%;
+    }
+    .item{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .related-articles h2{
+        text-align: center;
+    }
+    .Schematic-diagram img{
+        width: 100%;
+        height: auto;
+    }
+    .Schematic-diagram a{
+        font-size:26px;
+        padding-top: 10px;
+    }
+    .Schematic-diagram li{
+        margin-bottom: 40px;
+    }
     .label{
         display: flex;
         flex-direction:row-reverse;
         padding-top: 10px;
-      }
+    }
     .label h4 a{
         display: block;
         text-align:center;
@@ -478,11 +467,6 @@ body{
     display: flex;
     align-items: center;
 }
-@media (max-width: 767px){
-    .botton a{
-        font-size: 16px;
-    } 
-}
 .botton a:active{
     border: 2px solid #000;
 }
@@ -502,5 +486,8 @@ body{
         align-items: center;
         padding-left: 10px;
         padding-right: 10px;
+    } 
+    .botton a{
+        font-size: 16px;
     } 
 }
