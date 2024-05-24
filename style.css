@@ -72,10 +72,19 @@ body{
     margin-bottom: 150px;
 }
 .header img{
-    width: 100px;
+    max-width: 100px;
 }
 .navbar{
     display: flex;
+    flex-wrap:wrap;
+}
+@media (max-width: 500px){
+    .header{
+        padding: 28px 16% 28px 5%;
+    }
+    .navbar{
+        display: none;
+    }
 }
 @media (max-width: 375px){
     .header{
@@ -84,9 +93,6 @@ body{
     }
     .header img{
         width: 80px;
-    }
-    .navbar{
-        display: none;
     }
 }
 .navbar li a{
@@ -126,6 +132,7 @@ body{
 /*文章介紹*/
 .content-left{
     max-width: 856px;
+    line-height: 1.5;
 }
 .note{
     display: flex;
@@ -167,7 +174,6 @@ body{
     color: #3B3B3B;
     font-size: 24px;
     padding-bottom: 50px;
-    line-height: 1.5;
 }
 .content-left h3{
     color: #3B3B3B;
@@ -195,6 +201,12 @@ body{
     color: #3B3B3B;
     font-size: 24px;
 }
+@media (max-width: 500px){
+    .content-left{
+        padding: 10px;
+        margin-top: 30px;
+    }
+}
 
 /*文章連結*/
 .content-right{
@@ -209,6 +221,7 @@ body{
 }
 .article{
     font-size: 24px;
+    padding-right: 26px;
 }
 .article h3{
     color: #1E1E1E;
@@ -217,6 +230,7 @@ body{
     text-decoration-color: #1E1E1E;
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
+    white-space: nowrap;
     margin-bottom: 50px;
     padding-left: 8px;
 }
@@ -240,6 +254,34 @@ body{
     linear-gradient(to left, #919191, #919191) right bottom no-repeat,
     linear-gradient(to left, #919191, #919191) right bottom no-repeat;
     background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px; 
+}
+/*同學的建議*/
+@media (max-width: 500px){
+    .header{
+        margin-bottom: 0px;
+    }
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .content-left {
+        order: 2;
+    }
+    .content-right {
+        width: 100%;
+        order: 1;
+    }
+    .article{
+          display: flex;
+          white-space: nowrap;
+          overflow-x: auto;
+    }
+    .article h3{
+        margin-right: 12px;
+    }
+    &::-webkit-scrollbar {
+          display: none;
+    }
 }
 
 /*相關文章*/
@@ -366,6 +408,9 @@ body{
 }
 
 /*表尾部分(左側)*/
+.footer-left{
+    max-width: 100%;
+}
 .footer-left img{
     width: 150px;
     margin-bottom: 30px;
@@ -380,16 +425,14 @@ body{
     color: #919191;
     font-size: 22px;
 }
-@media (max-width: 375px){
+@media (max-width: 500px){
     .footer-left{
-        display: flex;
         flex-direction:column;
-        align-items: center;
+        text-align: center;
+        margin-bottom: 60px;
     }
     .footer-left h3{
         font-size: 20px;
-        display: flex;
-        text-align: center;
     }
     .footer-left h4{
         margin-bottom: 50px;
@@ -407,19 +450,23 @@ body{
     display: block;
 }
 .botton img{
-    width: 56px;
-    margin-left: 15px;
-    margin-right: 10px;
+    max-width: 56px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .botton a{
     text-decoration: none; 
     font-size: 22px;
     border-radius: 15px;
-    width: 306px;
-    padding: 12px;
+    padding: 12px 24px 12px 12px;
     border: 1px solid #C1C1C1;
     display: flex;
     align-items: center;
+}
+@media (max-width: 767px){
+    .botton a{
+        font-size: 16px;
+    } 
 }
 .botton a:active{
     border: 2px solid #000;
@@ -433,4 +480,12 @@ body{
     display: block;
     color: #3B3B3B;
     background: #FFFFFF;
+}
+@media (max-width: 500px){
+    .footer{
+        display: block;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
 }
