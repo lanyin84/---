@@ -78,7 +78,7 @@ body{
     display: flex;
     flex-wrap:wrap;
 }
-@media (max-width: 500px){
+@media (max-width: 767px){
     .header{
         padding: 28px 16% 28px 5%;
     }
@@ -201,7 +201,7 @@ body{
     color: #3B3B3B;
     font-size: 24px;
 }
-@media (max-width: 500px){
+@media (max-width: 767px){
     .content-left{
         padding: 10px;
         margin-top: 30px;
@@ -256,7 +256,7 @@ body{
     background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px; 
 }
 /*同學的建議*/
-@media (max-width: 500px){
+@media (max-width: 767px){
     .header{
         margin-bottom: 0px;
     }
@@ -425,7 +425,7 @@ body{
     color: #919191;
     font-size: 22px;
 }
-@media (max-width: 500px){
+@media (max-width: 767px){
     .footer-left{
         flex-direction:column;
         text-align: center;
@@ -481,7 +481,7 @@ body{
     color: #3B3B3B;
     background: #FFFFFF;
 }
-@media (max-width: 500px){
+@media (max-width: 767px){
     .footer{
         display: block;
         align-items: center;
