@@ -236,11 +236,6 @@ body{
     width: 306px;
     padding: 5% 0px 0px 3%;
     background: #FAFAFA;
-  }
-@media (max-width: 375px){
-    .content-right{
-        display: none;
-      }
 }
 .article{
     font-size: 24px;
