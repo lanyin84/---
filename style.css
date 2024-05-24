@@ -132,10 +132,10 @@ body{
         flex-direction:column;
     }
     .wrap{
-      width: 100%;
+        width: 100%;
     }
     .burger{
-      display: flex;
+        display: flex;
     }
 }
   
