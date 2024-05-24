@@ -295,9 +295,9 @@ body{
         order: 1;
     }
     .article{
-          display: flex;
-          white-space: nowrap;
-          overflow-x: auto;
+        display: flex;
+        white-space: nowrap;
+        overflow-x: auto;
     }
     .article h3{
         margin-right: 12px;
